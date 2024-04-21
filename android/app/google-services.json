@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "725156481458",
+    "project_id": "restaurant-vendors-app",
+    "storage_bucket": "restaurant-vendors-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725156481458:android:b3f29f10893b22586ebcab",
+        "android_client_info": {
+          "package_name": "com.shilpa.vendors_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADSBG-DLPiRiPo0tS0734r1baPgZGAfok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
