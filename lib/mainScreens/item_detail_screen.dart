@@ -1,10 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:foodpanda_sellers_app/global/global.dart';
-import 'package:foodpanda_sellers_app/model/items.dart';
-import 'package:foodpanda_sellers_app/splashScreen/splash_screen.dart';
-import 'package:foodpanda_sellers_app/widgets/simple_app_bar.dart';
+
+import '../global/global.dart';
+import '../model/items.dart';
+import '../splashScreen/splash_screen.dart';
+import '../widgets/simple_app_bar.dart';
+
 
 
 class ItemDetailsScreen extends StatefulWidget
@@ -27,7 +29,7 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen>
   deleteItem(String itemID)
   {
     FirebaseFirestore.instance
-        .collection("sellers")
+        .collection("vendors")
         .doc(sharedPreferences!.getString("uid"))
         .collection("menus")
         .doc(widget.model!.menuID!)
@@ -75,7 +77,7 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen>
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              widget.model!.price.toString() + " €",
+              widget.model!.price.toString() + " \$",
               style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
             ),
           ),

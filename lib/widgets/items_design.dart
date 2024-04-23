@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:foodpanda_sellers_app/mainScreens/itemsScreen.dart';
-import 'package:foodpanda_sellers_app/model/items.dart';
-import 'package:foodpanda_sellers_app/model/menus.dart';
+
+import '../mainScreens/item_detail_screen.dart';
+import '../mainScreens/itemsScreen.dart';
+import '../model/items.dart';
 
 
 
@@ -24,7 +25,7 @@ class _ItemsDesignWidgetState extends State<ItemsDesignWidget> {
     return InkWell(
       onTap: ()
       {
-        //Navigator.push(context, MaterialPageRoute(builder: (c)=> ItemsScreen(model: widget.model)));
+        Navigator.push(context, MaterialPageRoute(builder: (c)=> ItemDetailsScreen(model: widget.model)));
       },
       splashColor: Colors.amber,
       child: Padding(
@@ -58,8 +59,8 @@ class _ItemsDesignWidgetState extends State<ItemsDesignWidget> {
               Text(
                 widget.model!.shortInfo!,
                 style: const TextStyle(
-                  color: Colors.grey,
-                  fontSize: 12,
+                  color: Colors.black,
+                  fontSize: 14,
                 ),
               ),
               const SizedBox(height: 1,),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-class SimpleAppBar extends StatelessWidget with PreferredSizeWidget
+class SimpleAppBar extends StatelessWidget implements PreferredSizeWidget
 {
   String? title;
   final PreferredSizeWidget? bottom;

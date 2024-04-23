@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:foodpanda_sellers_app/authentication/auth_screen.dart';
-import 'package:foodpanda_sellers_app/global/global.dart';
-import 'package:foodpanda_sellers_app/mainScreens/home_screen.dart';
 
-
+import '../authentication/auth_screen.dart';
+import '../global/global.dart';
+import '../mainScreens/home_screen.dart';
 
 class MyDrawer extends StatelessWidget
 {
@@ -38,7 +37,7 @@ class MyDrawer extends StatelessWidget
                 const SizedBox(height: 10,),
                 Text(
                     sharedPreferences!.getString("name")!,
-                  style: TextStyle(color: Colors.black, fontSize: 20, fontFamily: "Train"),
+                  style: const TextStyle(color: Colors.black, fontSize: 20, fontFamily: "Train"),
                 ),
               ],
             ),
